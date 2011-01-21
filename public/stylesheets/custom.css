@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("http://fbchammond.com/images/time/2pm-tile.jpg");
+  background-image: url(../images/2pm-tile.jpg);
   background-repeat: repeat-x;
 }
 
