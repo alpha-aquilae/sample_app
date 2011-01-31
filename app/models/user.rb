@@ -20,5 +20,8 @@ class User < ActiveRecord::Base
   validates :email, :presence => true,
                     :format   => { :with => email_regex },
                     :uniqueness => { :case_sensitive => false }
+<<<<<<< HEAD
   validates :password, :confirmation => true
+=======
+>>>>>>> bdeb9c4ba6dedcc886b0c0d60175a4e210e6d7f3
 end
