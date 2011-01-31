@@ -10,7 +10,6 @@ describe User do
               :password_conformation => "foobar" 
             }
 
-    @attr = { :name => "Example User", :email => "user@example.com" }
   end
   
   it "should create a new instance given valid attributes" do
@@ -42,7 +41,18 @@ describe User do
     end
     
   end
-
+  
+  describe "password encryption" do
+  
+    before(:each) do
+      @user = User.create!(@attr)
+    end
+    
+    it "should have an encrypted password" do
+      @user.should respond_to(:encrypted_password)
+    end
+  end
+  
   it "should require a name" do
     no_name_user = User.new(@attr.merge(:name => ""))
     no_name_user.should_not be_valid
