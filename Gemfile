@@ -8,20 +8,12 @@ gem 'rails', '3.0.3'
 gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 
 group :development do
-<<<<<<< HEAD
    gem 'rspec-rails',  '2.4.0' 
-=======
-   gem 'rspec-rails', '2.3.0'
->>>>>>> bdeb9c4ba6dedcc886b0c0d60175a4e210e6d7f3
    gem 'annotate-models', '1.0.4'
 end
 
 group :test do
-<<<<<<< HEAD
    gem 'rspec', '2.4.0'
-=======
-   gem 'rspec', '2.3.0'
->>>>>>> bdeb9c4ba6dedcc886b0c0d60175a4e210e6d7f3
    gem 'webrat', '0.7.1'
    gem 'spork', '0.8.4'
 end
