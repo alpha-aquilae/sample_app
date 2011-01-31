@@ -3,22 +3,20 @@ require 'spec_helper'
 describe User do
 
   before(:each) do
-<<<<<<< HEAD
+
     @attr = { :name => "Example User", 
               :email => "user@example.com",
               :password => "foobar",
               :password_conformation => "foobar" 
             }
-=======
+
     @attr = { :name => "Example User", :email => "user@example.com" }
->>>>>>> bdeb9c4ba6dedcc886b0c0d60175a4e210e6d7f3
   end
   
   it "should create a new instance given valid attributes" do
     User.create!(@attr)
   end
 
-<<<<<<< HEAD
   describe "password validations" do
     
     it "should require a password" do
@@ -45,8 +43,6 @@ describe User do
     
   end
 
-=======
->>>>>>> bdeb9c4ba6dedcc886b0c0d60175a4e210e6d7f3
   it "should require a name" do
     no_name_user = User.new(@attr.merge(:name => ""))
     no_name_user.should_not be_valid
